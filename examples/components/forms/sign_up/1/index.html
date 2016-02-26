@@ -53,9 +53,6 @@
   </fieldset>
 </form>
 
-<!--
-  !!! Don't include the component data for now
-
   <ul>
     
   <li>.pvl</li>
@@ -360,10 +357,6 @@
 
   <li>tachyons-display</li>
 
-  <li>tachyons-font-weight</li>
-
-  <li>tachyons-forms</li>
-
   <li>tachyons-letter-spacing</li>
 
   <li>tachyons-line-height</li>
@@ -376,8 +369,6 @@
 
   <li>tachyons-skins</li>
 
-  <li>tachyons-spacing</li>
-
   <li>tachyons-text-transform</li>
 
   <li>tachyons-type-scale</li>
@@ -389,12 +380,183 @@
   <li>tachyons-hovers</li>
 
   </ul>
+
+  <h4>CSS</h4>
+  <pre>
+    /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+  .ba{ border-style:solid; border-width:1px; }
+  .bt{ border-top-style:solid; border-top-width:1px; }
+.b--white-20{   border-color:rgba(255,255,255,.2); }
+.b--black-10{   border-color:rgba(0,0,0,.1); }
+.db{     display:block; }
+.dib{    display:inline-block; }
+
+.tracked{ letter-spacing:.16em; }
+.tracked-tight{ letter-spacing:-.08em; }
+.tracked-mega{ letter-spacing:.32em; }
+.lh-copy{ line-height:1.6; }
+
+.link{
+  text-decoration:none;
+  transition:color .15s ease-in;
+}
+
+.link:link,
+.link:visited{
+  transition:color .15s ease-in;
+}
+.link:hover{
+  transition:color .15s ease-in;
+}
+.link:active{
+  transition:color .15s ease-in;
+}
+.link:focus{
+  transition:color .15s ease-in;
+}
+.mw4{  max-width:8rem; }
+.w-100{ width:100%; }
+.black-80{         color:rgba(0,0,0,.8); }
+.black-50{         color:rgba(0,0,0,.5); }
+.black-40{         color:rgba(0,0,0,.4); }
+.black-30{         color:rgba(0,0,0,.3); }
+.bg-white-60{        background-color:rgba(255,255,255,.6); }
+.ttu{ text-transform:uppercase; }
+.f3{ font-size:1.5rem; }
+.f4{ font-size:1.25rem; }
+.measure{
+  max-width:30em;
+}
+.measure-narrow{
+  max-width:20em;
+}
+
+.center{
+  margin-right:auto;
+  margin-left:auto;
+}
+.dim{ 
+  opacity:1; 
+  transition:opacity .15s ease-in; 
+}
+.dim:hover,
+.dim:focus{ 
+  opacity:.5; 
+  transition:opacity .15s ease-in; 
+}
+.dim:active{
+  opacity:.8; transition:opacity .15s ease-out; 
+}
+@media screen and (min-width: 48em){
+
+ .ba-ns{ border-style:solid; border-width:1px; }
+
+ .bt-ns{ border-top-style:solid; border-top-width:1px; }
+
+ .db-ns{ display:block; }
+
+ .dib-ns{ display:inline-block; }
+
+ .tracked-ns{ letter-spacing:.16em; }
+
+ .tracked-tight-ns{ letter-spacing:-.08em; }
+
+ .tracked-mega-ns{ letter-spacing:.32em; }
+
+ .lh-copy-ns{ line-height:1.6; }
+
+ .mw4-ns{ max-width:8rem; }
+
+ .mw6-ns{ max-width:32rem; }
+
+ .w-100-ns{ width:100%; }
+
+ .ttu-ns{ text-transform:uppercase; }
+
+ .f3-ns{ font-size:1.5rem; }
+
+ .f4-ns{ font-size:1.25rem; }
+
+ .measure-ns{ max-width:30em; }
+
+ .measure-narrow-ns{ max-width:20em; } }
+@media screen and (min-width: 48em) and (max-width: 64em){
+
+ .ba-m{ border-style:solid; border-width:1px; }
+
+ .bt-m{ border-top-style:solid; border-top-width:1px; }
+
+ .db-m{ display:block; }
+
+ .dib-m{ display:inline-block; }
+
+ .tracked-m{ letter-spacing:.16em; }
+
+ .tracked-tight-m{ letter-spacing:-.08em; }
+
+ .tracked-mega-m{ letter-spacing:.32em; }
+
+ .lh-copy-m{ line-height:1.6; }
+
+ .mw4-m{ max-width:8rem; }
+
+ .w-100-m{ width:100%; }
+
+ .ttu-m{ text-transform:uppercase; }
+
+ .f3-m{ font-size:1.5rem; }
+
+ .f4-m{ font-size:1.25rem; }
+
+ .measure-m{ max-width:30em; }
+
+ .measure-narrow-m{ max-width:20em; } }
+@media screen and (min-width: 64em){
+
+ .ba-l{ border-style:solid; border-width:1px; }
+
+ .bt-l{ border-top-style:solid; border-top-width:1px; }
+
+ .db-l{ display:block; }
+
+ .dib-l{ display:inline-block; }
+
+ .tracked-l{ letter-spacing:.16em; }
+
+ .tracked-tight-l{ letter-spacing:-.08em; }
+
+ .tracked-mega-l{ letter-spacing:.32em; }
+
+ .lh-copy-l{ line-height:1.6; }
+
+ .mw4-l{ max-width:8rem; }
+
+ .w-100-l{ width:100%; }
+
+ .ttu-l{ text-transform:uppercase; }
+
+ .f3-l{ font-size:1.5rem; }
+
+ .f4-l{ font-size:1.25rem; }
+
+ .measure-l{ max-width:30em; }
+
+ .measure-narrow-l{ max-width:20em; } }
+
+  </pre>
+
+  <h4>Stats</h4>
+  <pre>
+806 | 79 | 90
+---|---|---
+bytes | selectors | declarations
+  </pre>
 </main>
 
 
 
 
--->
 
 <footer class="bg-white gray phm pvxl pvxxl-ns bt b--light-gray h-50">
   <small class="f5 mw7 db center lh-copy">

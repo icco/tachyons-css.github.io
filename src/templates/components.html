@@ -12,9 +12,6 @@
 <body class="wi-100 sans-serif <%= bodyClass %>">
 <main>
   <%= content %>
-<!--
-  !!! Don't include the component data for now
-
   <ul>
     <% classes.map(renderClass) %>
   </ul>
@@ -22,6 +19,18 @@
   <ul>
     <% modules.map(renderModule) %>
   </ul>
+
+  <h4>CSS</h4>
+  <pre>
+    <%= componentCss %>
+  </pre>
+
+  <h4>Stats</h4>
+  <pre>
+<%= stats.gzipSize %> | <%= stats.selectors.total %> | <%= stats.declarations.total %>
+---|---|---
+bytes | selectors | declarations
+  </pre>
 </main>
 
 <% function renderClass(klass) { %>
@@ -31,7 +40,6 @@
 <% function renderModule(module) { %>
   <li><%= module %></li>
 <% } %>
--->
 
 <footer class="bg-white gray phm pvxl pvxxl-ns bt b--light-gray h-50">
   <small class="f5 mw7 db center lh-copy">
